@@ -668,30 +668,6 @@ would happen if the current value happened to be `false`.)
   always use parentheses in the method invocation. For example, write
 `f((3 + 2) + 1)`.
 
-* Use the new lambda literal syntax for single line body blocks. Use the
-  `lambda` method for multi-line blocks.
-
-    ```Ruby
-    # bad
-    l = lambda { |a, b| a + b }
-    l.call(1, 2)
-
-    # correct, but looks extremely awkward
-    l = ->(a, b) do
-      tmp = a * 7
-      tmp * b / 50
-    end
-
-    # good
-    l = ->(a, b) { a + b }
-    l.call(1, 2)
-
-    l = lambda do |a, b|
-      tmp = a * 7
-      tmp * b / 50
-    end
-    ```
-
 * Prefer `proc` over `Proc.new`.
 
     ```Ruby
