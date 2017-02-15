@@ -10,6 +10,7 @@
 3. Use shared example groups where possible to DRY up code. These inherit context implicitly, but can also be passed a context block, or direct parameters.
 5. Before/after block ordering.
 4. Never use methods that have spec blocks defined in them. These are not re-runnable, because when you try to run the file with a line number, rspec can't figure out what describe or context block to place it in so it filters out all the examples. Best to used shared example blocks. If you wanna be DRY, there are ways to pass block parameters into a shared example block.
+1. Use the actual class name rather than `described_class` [(poll result)](http://doodle.com/poll/33i47si547brfabg)
 
 #### Avoid looping wherever possible
 
