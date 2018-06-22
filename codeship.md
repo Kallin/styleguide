@@ -16,4 +16,16 @@ branch, but there are a few exceptions:
 
 TODO
 
+## Skipping CI
+
+TODO
+
+## Troubleshooting
+
+TODO
+
+## Re-running
+
+TODO
+
 [Continuous Integration]: https://en.wikipedia.org/wiki/Continuous_integration
